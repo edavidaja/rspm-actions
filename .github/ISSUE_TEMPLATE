@@ -1,0 +1,15 @@
+name: Add package
+description: Request that a package be added to a repository
+body:
+  - type: markdown
+    attributes: 
+      value: |
+        enter a package name
+  - type: input
+    id: package
+    attributes:
+      label: package name
+      description: exact spelling of package name on CRAN
+      placeholder: e.g. Rmpfr
+    validations:
+      required: true
